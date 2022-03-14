@@ -67,6 +67,6 @@ class ProblemTests(TestCase):
         present = ["Basia", "Laila"]
         value = has_quorum(present, members)
         self.assertTrue(
-            value is False,
-            msg="50% of the people are there. That is not a quorum.",
+            value is True,
+            msg="50% of the people are there. That is a quorum.",
         )
