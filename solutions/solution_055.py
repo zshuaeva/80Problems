@@ -22,7 +22,7 @@
 #     * input: 7
 #       returns: "VII"
 #     * input: 8
-#       returns: "VII"
+#       returns: "VIII"
 #     * input: 9
 #       returns: "IX"
 #     * input: 1
@@ -37,7 +37,7 @@ def simple_roman(number):           # solution
         5: "V",                     # solution
         6: "VI",                    # solution
         7: "VII",                   # solution
-        8: "VII",                   # solution
+        8: "VIII",                  # solution
         9: "IX",                    # solution
         10: "X",                    # solution
     }                               # solution
