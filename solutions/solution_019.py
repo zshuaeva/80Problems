@@ -8,7 +8,7 @@
 #   rect_height: The height of the rectangle
 #
 # The is_inside_bounds function returns true if all of
-# the following are tru
+# the following are true
 #   * x is greater than or equal to rect_x
 #   * y is greater than or equal to rect_y
 #   * x is less than or equal to rect_x + rect_width
