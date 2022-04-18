@@ -6,5 +6,11 @@
     "."
   ],
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
+  "cSpell.words": [
+    "pseudocode",
+    "pytest",
+    "venv",
+    "whiteboarding"
+  ]
 }
