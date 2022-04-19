@@ -25,7 +25,7 @@
 #       returns: "VIII"
 #     * input: 9
 #       returns: "IX"
-#     * input: 1
+#     * input: 10
 #       returns:  "X"
 
 def simple_roman(number):           # solution

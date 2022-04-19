@@ -22,9 +22,9 @@
 #     * input: 7
 #       returns: "VII"
 #     * input: 8
-#       returns: "VII"
+#       returns: "VIII"
 #     * input: 9
 #       returns: "IX"
-#     * input: 1
+#     * input: 10
 #       returns:  "X"
 
