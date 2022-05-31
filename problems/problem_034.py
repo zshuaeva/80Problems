@@ -23,12 +23,4 @@
 # This problem has pseudocode to guide you.
 
 def count_letters_and_digits(s):
-    # number of letters = 0
-    # number of digits = 0
-    # for each character c in s
-        # if the character c is a digit (c.isdigit())
-            # add one to the number of digits
-        # if the character c is a letter (c.isalpha())
-            # add one to the number of letters
-    # return number of letters, number of digits
     pass

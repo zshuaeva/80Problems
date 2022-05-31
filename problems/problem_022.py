@@ -5,9 +5,6 @@
 #   * If it is a workday, the list needs to contain "laptop"
 #   * If it is not a workday, the list needs to contain
 #     "surfboard"
-#
-# Do it without pseudocode, this time, from memory. Don't look
-# at the last one you just wrote unless you really must.
 
 def gear_for_day(is_workday, is_sunny):
     pass

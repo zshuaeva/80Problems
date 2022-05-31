@@ -8,11 +8,4 @@
 # Pseudocode is available for you
 
 def calculate_average(values):
-    # If there are no items in the list of values
-        # return None
-    # sum = 0
-    # for each item in the list of values
-        # add it to the sum
-    # return the sum divided by the number of items
-    # in the list
     pass

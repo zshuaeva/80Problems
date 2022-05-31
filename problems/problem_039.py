@@ -11,9 +11,6 @@
 #     output: {"value", "key"}
 #   * input:  {"one": 1, "two": 2, "three": 3}
 #     output: {1: "one", 2: "two", 3: "three"}
-#
-# Do it without pseudocode, this time, from memory. Don't look
-# at the last one you just wrote unless you really must.
 
 def reverse_dictionary(dictionary):
     pass

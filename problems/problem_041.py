@@ -17,10 +17,7 @@
 #
 # Look up the string split function to find out how to
 # split a string into pieces.
-#
-# Do it without pseudocode, this time, from memory. Don't look
-# at the last one you just wrote unless you really must.
-#
+
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
