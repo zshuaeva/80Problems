@@ -13,9 +13,6 @@
 #   * y is greater than or equal to rect_y
 #   * x is less than or equal to rect_x + rect_width
 #   * y is less than or equal to rect_y + rect_height
-#
-# Do it without pseudocode, this time, from memory. Don't look
-# at number 017 that you just wrote unless you really must.
 
 def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
     pass
