@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_054 import check_input
-else:
-    try:
-        from problems.problem_054 import check_input
-    except Exception:
-        def check_input(x): return None
+try:
+    from problems.problem_054 import check_input
+except Exception:
+    def check_input(x): return None
 
 
 class ProblemTests(TestCase):

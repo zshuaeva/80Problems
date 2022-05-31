@@ -1,18 +1,14 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_081 import Dog, Cat, Snake
-else:
-    try:
-        from problems.problem_081 import Dog, Cat, Snake
-    except Exception:
-        class Dog:
-            pass
-        class Cat:
-            pass
-        class Snake:
-            pass
+try:
+    from problems.problem_081 import Dog, Cat, Snake
+except Exception:
+    class Dog:
+        pass
+    class Cat:
+        pass
+    class Snake:
+        pass
 
 
 class ProblemTests(TestCase):

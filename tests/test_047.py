@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_047 import check_password
-else:
-    from problems.problem_047 import check_password
+from problems.problem_047 import check_password
 
 
 class ProblemTests(TestCase):

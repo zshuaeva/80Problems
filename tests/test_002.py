@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_002 import minimum_value
-else:
-    from problems.problem_002 import minimum_value
+from problems.problem_002 import minimum_value
 
 
 class ProblemTests(TestCase):

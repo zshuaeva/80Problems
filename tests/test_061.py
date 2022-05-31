@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_061 import remove_duplicates
-else:
-    try:
-        from problems.problem_061 import remove_duplicates
-    except Exception:
-        def remove_duplicates(x):
-            return None
+try:
+    from problems.problem_061 import remove_duplicates
+except Exception:
+    def remove_duplicates(x):
+        return None
 
 
 class ProblemTests(TestCase):

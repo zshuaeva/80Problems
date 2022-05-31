@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_027 import max_in_list
-else:
-    from problems.problem_027 import max_in_list
+from problems.problem_027 import max_in_list
 
 
 class ProblemTests(TestCase):

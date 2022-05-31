@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_035 import count_letters_and_digits
-else:
-    from problems.problem_035 import count_letters_and_digits
+from problems.problem_035 import count_letters_and_digits
 
 
 class ProblemTests(TestCase):

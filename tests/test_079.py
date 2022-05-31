@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_079 import ReceiptItem
-else:
-    try:
-        from problems.problem_079 import ReceiptItem
-    except Exception:
-        class ReceiptItem:
-            pass
+try:
+    from problems.problem_079 import ReceiptItem
+except Exception:
+    class ReceiptItem:
+        pass
 
 
 class ProblemTests(TestCase):

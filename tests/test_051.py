@@ -1,14 +1,10 @@
-import os
 import math
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_051 import safe_divide
-else:
-    try:
-        from problems.problem_051 import safe_divide
-    except Exception:
-        def safe_divide(n, d): return None
+try:
+    from problems.problem_051 import safe_divide
+except Exception:
+    def safe_divide(n, d): return None
 
 
 class ProblemTests(TestCase):

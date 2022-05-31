@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_038 import reverse_dictionary
-else:
-    from problems.problem_038 import reverse_dictionary
+from problems.problem_038 import reverse_dictionary
 
 
 class ProblemTests(TestCase):

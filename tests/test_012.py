@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_012 import fizzbuzz
-else:
-    from problems.problem_012 import fizzbuzz
+from problems.problem_012 import fizzbuzz
 
 
 class ProblemTests(TestCase):

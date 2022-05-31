@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_042 import pairwise_add
-else:
-    from problems.problem_042 import pairwise_add
+from problems.problem_042 import pairwise_add
 
 
 class ProblemTests(TestCase):

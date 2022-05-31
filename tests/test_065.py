@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_065 import biggest_gap
-else:
-    try:
-        from problems.problem_065 import biggest_gap
-    except Exception:
-        def biggest_gap(nums):
-            return None
+try:
+    from problems.problem_065 import biggest_gap
+except Exception:
+    def biggest_gap(nums):
+        return None
 
 
 class ProblemTests(TestCase):

@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_010 import is_divisible_by_3
-else:
-    from problems.problem_010 import is_divisible_by_3
+from problems.problem_010 import is_divisible_by_3
 
 
 class ProblemTests(TestCase):

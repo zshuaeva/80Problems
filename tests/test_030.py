@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_030 import find_second_largest
-else:
-    from problems.problem_030 import find_second_largest
+from problems.problem_030 import find_second_largest
 
 
 class ProblemTests(TestCase):

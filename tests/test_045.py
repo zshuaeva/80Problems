@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_045 import make_sentences
-else:
-    from problems.problem_045 import make_sentences
+from problems.problem_045 import make_sentences
 
 
 class ProblemTests(TestCase):

@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_007 import is_palindrome
-else:
-    from problems.problem_007 import is_palindrome
+from problems.problem_007 import is_palindrome
 
 
 class ProblemTests(TestCase):

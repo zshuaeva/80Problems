@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_049 import sum_two_numbers
-else:
-    try:
-        from problems.problem_049 import sum_two_numbers
-    except Exception:
-        def sum_two_numbers(x, y): return None
+try:
+    from problems.problem_049 import sum_two_numbers
+except Exception:
+    def sum_two_numbers(x, y): return None
 
 
 class ProblemTests(TestCase):

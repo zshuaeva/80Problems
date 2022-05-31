@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_056 import num_concat
-else:
-    try:
-        from problems.problem_056 import num_concat
-    except Exception:
-        def num_concat(x, y):
-            return None
+try:
+    from problems.problem_056 import num_concat
+except Exception:
+    def num_concat(x, y):
+        return None
 
 
 class ProblemTests(TestCase):

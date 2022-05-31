@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_064 import temperature_differences
-else:
-    try:
-        from problems.problem_064 import temperature_differences
-    except Exception:
-        def temperature_differences(highs, lows):
-            return None
+try:
+    from problems.problem_064 import temperature_differences
+except Exception:
+    def temperature_differences(highs, lows):
+        return None
 
 
 class ProblemTests(TestCase):

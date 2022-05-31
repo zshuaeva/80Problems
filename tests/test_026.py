@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_026 import calculate_grade
-else:
-    from problems.problem_026 import calculate_grade
+from problems.problem_026 import calculate_grade
 
 
 class ProblemTests(TestCase):

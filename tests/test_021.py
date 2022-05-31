@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_021 import gear_for_day
-else:
-    from problems.problem_021 import gear_for_day
+from problems.problem_021 import gear_for_day
 
 
 class ProblemTests(TestCase):

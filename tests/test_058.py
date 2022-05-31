@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_058 import group_cities_by_state
-else:
-    try:
-        from problems.problem_058 import group_cities_by_state
-    except Exception:
-        def group_cities_by_state(x):
-            return None
+try:
+    from problems.problem_058 import group_cities_by_state
+except Exception:
+    def group_cities_by_state(x):
+        return None
 
 
 class ProblemTests(TestCase):

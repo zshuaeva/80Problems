@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_053 import username_from_email
-else:
-    try:
-        from problems.problem_053 import username_from_email
-    except Exception:
-        def username_from_email(): return None
+try:
+    from problems.problem_053 import username_from_email
+except Exception:
+    def username_from_email(): return None
 
 
 class ProblemTests(TestCase):

@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_017 import is_inside_bounds
-else:
-    from problems.problem_017 import is_inside_bounds
+from problems.problem_017 import is_inside_bounds
 
 
 class ProblemTests(TestCase):

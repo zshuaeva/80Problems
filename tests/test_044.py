@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_044 import translate
-else:
-    from problems.problem_044 import translate
+from problems.problem_044 import translate
 
 
 class ProblemTests(TestCase):

@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_057 import sum_fraction_sequence
-else:
-    try:
-        from problems.problem_057 import sum_fraction_sequence
-    except Exception:
-        def sum_fraction_sequence(x):
-            return None
+try:
+    from problems.problem_057 import sum_fraction_sequence
+except Exception:
+    def sum_fraction_sequence(x):
+        return None
 
 
 class ProblemTests(TestCase):

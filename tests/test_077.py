@@ -1,15 +1,11 @@
-import os
 import math
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_077 import Circle
-else:
-    try:
-        from problems.problem_077 import Circle
-    except Exception:
-        class Circle:
-            pass
+try:
+    from problems.problem_077 import Circle
+except Exception:
+    class Circle:
+        pass
 
 
 class ProblemTests(TestCase):

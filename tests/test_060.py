@@ -1,15 +1,11 @@
 from cmath import exp
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_060 import only_odds
-else:
-    try:
-        from problems.problem_060 import only_odds
-    except Exception:
-        def only_odds(x):
-            return None
+try:
+    from problems.problem_060 import only_odds
+except Exception:
+    def only_odds(x):
+        return None
 
 
 class ProblemTests(TestCase):

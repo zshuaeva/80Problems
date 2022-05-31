@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_048 import count_word_frequencies
-else:
-    try:
-        from problems.problem_048 import count_word_frequencies
-    except Exception:
-        def count_word_frequencies(sentence): return None
+try:
+    from problems.problem_048 import count_word_frequencies
+except Exception:
+    def count_word_frequencies(sentence): return None
 
 
 class ProblemTests(TestCase):

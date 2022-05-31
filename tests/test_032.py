@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_032 import sum_of_first_n_numbers
-else:
-    from problems.problem_032 import sum_of_first_n_numbers
+from problems.problem_032 import sum_of_first_n_numbers
 
 
 class ProblemTests(TestCase):

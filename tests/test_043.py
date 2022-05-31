@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_043 import find_indexes
-else:
-    from problems.problem_043 import find_indexes
+from problems.problem_043 import find_indexes
 
 
 class ProblemTests(TestCase):

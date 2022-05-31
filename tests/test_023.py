@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_023 import calculate_sum
-else:
-    from problems.problem_023 import calculate_sum
+from problems.problem_023 import calculate_sum
 
 
 class ProblemTests(TestCase):

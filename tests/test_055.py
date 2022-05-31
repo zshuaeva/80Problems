@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_055 import simple_roman
-else:
-    try:
-        from problems.problem_055 import simple_roman
-    except Exception:
-        def simple_roman(x):
-            return None
+try:
+    from problems.problem_055 import simple_roman
+except Exception:
+    def simple_roman(x):
+        return None
 
 
 param_list = [

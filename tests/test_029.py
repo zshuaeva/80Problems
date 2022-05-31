@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_029 import calculate_average
-else:
-    from problems.problem_029 import calculate_average
+from problems.problem_029 import calculate_average
 
 
 class ProblemTests(TestCase):

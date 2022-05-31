@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_041 import add_csv_lines
-else:
-    from problems.problem_041 import add_csv_lines
+from problems.problem_041 import add_csv_lines
 
 
 class ProblemTests(TestCase):

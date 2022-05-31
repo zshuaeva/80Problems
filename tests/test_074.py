@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_074 import BankAccount
-else:
-    try:
-        from problems.problem_074 import BankAccount
-    except Exception:
-        class BankAccount:
-            pass
+try:
+    from problems.problem_074 import BankAccount
+except Exception:
+    class BankAccount:
+        pass
 
 
 class ProblemTests(TestCase):

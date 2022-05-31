@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_004 import max_of_three
-else:
-    from problems.problem_004 import max_of_three
+from problems.problem_004 import max_of_three
 
 
 class ProblemTests(TestCase):

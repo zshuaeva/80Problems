@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_050 import halve_the_list
-else:
-    try:
-        from problems.problem_050 import halve_the_list
-    except Exception:
-        def halve_the_list(l): return None
+try:
+    from problems.problem_050 import halve_the_list
+except Exception:
+    def halve_the_list(l): return None
 
 
 class ProblemTests(TestCase):

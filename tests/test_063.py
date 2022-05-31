@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_063 import shift_letters
-else:
-    try:
-        from problems.problem_063 import shift_letters
-    except Exception:
-        def shift_letters(s):
-            return None
+try:
+    from problems.problem_063 import shift_letters
+except Exception:
+    def shift_letters(s):
+        return None
 
 
 class ProblemTests(TestCase):

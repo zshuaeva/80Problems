@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_028 import remove_duplicate_letters
-else:
-    from problems.problem_028 import remove_duplicate_letters
+from problems.problem_028 import remove_duplicate_letters
 
 
 class ProblemTests(TestCase):

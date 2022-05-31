@@ -1,13 +1,9 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_052 import generate_lottery_numbers
-else:
-    try:
-        from problems.problem_052 import generate_lottery_numbers
-    except Exception:
-        def generate_lottery_numbers(): return None
+try:
+    from problems.problem_052 import generate_lottery_numbers
+except Exception:
+    def generate_lottery_numbers(): return None
 
 
 class ProblemTests(TestCase):

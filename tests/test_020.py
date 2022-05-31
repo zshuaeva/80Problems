@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_020 import has_quorum
-else:
-    from problems.problem_020 import has_quorum
+from problems.problem_020 import has_quorum
 
 
 class ProblemTests(TestCase):

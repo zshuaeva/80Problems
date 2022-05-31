@@ -1,14 +1,10 @@
-import os
 from unittest import TestCase
 
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_059 import specific_random
-else:
-    try:
-        from problems.problem_059 import specific_random
-    except Exception:
-        def specific_random():
-            return None
+try:
+    from problems.problem_059 import specific_random
+except Exception:
+    def specific_random():
+        return None
 
 
 class ProblemTests(TestCase):

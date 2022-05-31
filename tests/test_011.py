@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_011 import is_divisible_by_5
-else:
-    from problems.problem_011 import is_divisible_by_5
+from problems.problem_011 import is_divisible_by_5
 
 
 class ProblemTests(TestCase):

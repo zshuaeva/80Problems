@@ -1,10 +1,5 @@
-import os
 from unittest import TestCase
-
-if os.environ.get("SOLUTION_TEST"):
-    from solutions.solution_014 import can_make_pasta
-else:
-    from problems.problem_014 import can_make_pasta
+from problems.problem_014 import can_make_pasta
 
 
 class ProblemTests(TestCase):
