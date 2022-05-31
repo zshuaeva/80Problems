@@ -19,8 +19,7 @@
 # in Python. You just use a comma with the return, like
 # this:
 #      return value1, value2
-#
-# This problem has pseudocode to guide you.
+
 
 def count_letters_and_digits(s):
     pass
