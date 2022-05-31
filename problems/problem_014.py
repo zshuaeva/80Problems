@@ -5,5 +5,10 @@
 #
 # The ingredients list will always contain three items.
 
+# Do some planning in ./planning.md
+
+# Write out some pseudocode before trying to solve the
+# problem to get a good feel for how to solve it.
+
 def can_make_pasta(ingredients):
     pass

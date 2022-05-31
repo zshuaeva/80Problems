@@ -5,5 +5,10 @@
 # You can use the test number % 3 == 0 to test if a
 # number is divisible by 3.
 
+# Do some planning in ./planning.md
+
+# Write out some pseudocode before trying to solve the
+# problem to get a good feel for how to solve it.
+
 def is_divisible_by_3(number):
     pass

@@ -10,5 +10,10 @@
 # Try to combine what you have done in the last two problems
 # from memory.
 
+# Do some planning in ./planning.md
+
+# Write out some pseudocode before trying to solve the
+# problem to get a good feel for how to solve it.
+
 def fizzbuzz(number):
     pass
