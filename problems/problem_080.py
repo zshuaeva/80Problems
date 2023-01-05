@@ -36,7 +36,7 @@ class Receipt:
     # method get_subtotal(self)
         # sum = 0
         # for each item in self.items
-            # increase sum by item.get_total()
+            # increase sum by item.get_total() 
         # return sum
     def get_subtotal(self):
         sum = 0
