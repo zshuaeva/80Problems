@@ -7,4 +7,10 @@
 #
 
 def calculate_sum(values):
-    for 
+    sum = 0
+    if len(values) == 0:
+        return None
+        
+    for i in values:
+        sum += i
+    return sum

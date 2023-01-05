@@ -8,10 +8,10 @@
 
 def gear_for_day(is_workday, is_sunny):
     gear = []
-    if is_sunny == False and is_workday == True:
+    if not is_sunny and is_workday:
         gear.append("umbrella")
-    if is_workday == True:
+    if is_workday:
         gear.append("laptop")
-    if is_workday == False:
+    if not is_workday:
         gear.append("surfboard")
     return gear
