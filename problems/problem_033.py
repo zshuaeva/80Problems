@@ -17,3 +17,14 @@
 
 def sum_of_first_n_even_numbers(n):
     pass
+#I: int
+#O: int
+#E: if limit less than 0, return None
+    if n < 0:
+        return None
+    result = 0
+    for i in range(n + 1):
+        result += i * 2
+    return result
+
+print(sum_of_first_n_even_numbers(5))
