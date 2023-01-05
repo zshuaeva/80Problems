@@ -38,7 +38,7 @@ class Dog(Animal):
 # Required state:       inherited from Animal
 #
 # Behavior:
-#    * speak()          # Returns the string "Miao!" 
+#    * speak()          # Returns the string "Miao!"
 class Cat(Animal):
     def speak(self):
         return "Miao!"

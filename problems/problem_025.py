@@ -7,4 +7,4 @@
 #
 
 def calculate_sum(values):
-    pass
+    for 
