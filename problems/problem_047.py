@@ -27,13 +27,13 @@ def check_password(password):
 
     for i in password:
         if i.islower() == True:
-            if_lower == True
+            if_lower = True
         if i.isupper() == True:
-            if_upper == True
+            if_upper = True
         if i.isdigit() == True:
-            if_digit == True
+            if_digit = True
         if i == "$" or i == "!" or i == "@":
-            if_char == True
-        if len(password) >= 6 and len(password) <= 12 == True:
-            if_len == True
+            if_char = True
+        if (len(password)) >= 6 and (len(password) <= 12) == True:
+            if_len = True
     return (if_lower and if_upper and if_digit and if_char and if_len)
