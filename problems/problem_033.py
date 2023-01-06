@@ -24,6 +24,7 @@ def sum_of_first_n_even_numbers(n):
         return None
     result = 0
     for i in range(n + 1):
+        print(i)
         result += i * 2
     return result
 

@@ -24,4 +24,14 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    #I:STRING
+    #O: 2 values, number letters in the string, and number of digits in string
+    
+    digit_count = 0
+    alpha_count = 0
+    for i in s:
+        if i.isdigit() == True:
+            digit_count += 1
+        elif i.isalpha() == True:
+            alpha_count += 1
+    return alpha_count, digit_count

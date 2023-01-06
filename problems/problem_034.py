@@ -31,4 +31,4 @@ def count_letters_and_digits(s):
             digit_count += 1
     print(alpha_count, digit_count)
     return alpha_count, digit_count
-print(count_letters_and_digits("1aa"))
+

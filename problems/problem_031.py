@@ -16,7 +16,6 @@
 def sum_of_squares(values):
     if len(values) == 0:
         return None
-
     result = []
     for i in values:
         result.append(i*i)
