@@ -24,4 +24,3 @@ def biggest_gap(num_list):
             biggest_gap = abs((num_list[i+1]) - num_list[i])
     return biggest_gap
 
-print(biggest_gap([1, 3, 100, 103, 106]))
