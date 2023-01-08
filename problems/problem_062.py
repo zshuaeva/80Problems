@@ -23,3 +23,12 @@
 #     * inputs:  10, "/", 12
 #       result:  0.8333333333333334
 
+def basic_calculator(left, operator, right):
+    if operator == "+":
+        return left + right
+    if operator == "-":
+        return left - right
+    if operator == "*":
+        return left * right
+    if operator == "/":
+        return left / right
