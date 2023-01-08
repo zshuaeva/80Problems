@@ -28,3 +28,9 @@
 #     * input: 10
 #       returns:  "X"
 
+def simple_roman(value):
+    romans = ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
+    index = romans[value - 1]
+    return index
+
+print(simple_roman(4))

@@ -14,4 +14,17 @@
 # package.
 #
 # https://docs.python.org/3/library/random.html
+    # generate number between 1, 40
+        #add to number list
+    #failed -- saying numbers not unique, must check values in number list
+    #return number list
 
+import random
+def generate_lottery_numbers():
+    number_list = []
+    while len(number_list) < 6:
+        selection = random.randint(1, 40)
+        if selection not in number_list:
+            number_list.append(selection)
+    return number_list
+print(generate_lottery_numbers())

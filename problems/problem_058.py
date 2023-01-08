@@ -22,3 +22,13 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def group_cities_by_state(town_list):
+    result = {}
+    for town in town_list:
+        name, state = town.split(",")
+        state = state.strip()
+        if state not in result:
+            result[state] = []
+        result[state].append(name)
+    return result
+print(group_cities_by_state(["Cleveland, OH", "Columbus, OH", "Chicago, IL"]))
