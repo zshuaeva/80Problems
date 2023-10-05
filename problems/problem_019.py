@@ -2,8 +2,8 @@
 # following parameters:
 #   x: the x coordinate to check
 #   y: the y coordinate to check
-#   rect_x: The left of a rectangle
-#   rect_y: The top of a rectangle
+#   rect_x: The left of the rectangle
+#   rect_y: The bottom of the rectangle
 #   rect_width: The width of the rectangle
 #   rect_height: The height of the rectangle
 #

@@ -10,7 +10,12 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_divisible_by_3(number):
     if number % 3 == 0:
         return "fizz"
+
     return number
+
+print(is_divisible_by_3(3), "should return 'fizz' ")
+print(is_divisible_by_3(2), "should return", 2)
