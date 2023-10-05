@@ -13,4 +13,11 @@
 # problem to get a good feel for how to solve it.
 
 def max_of_three(value1, value2, value3):
-    pass
+    maxnum = value1
+    vl = [value1, value2, value3]
+    for i in vl:
+        if i > maxnum:
+            maxnum = i
+    return maxnum
+
+print(max_of_three(5, 50, 10))

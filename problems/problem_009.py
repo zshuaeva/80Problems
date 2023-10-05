@@ -12,5 +12,20 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_palindrome(word):
-    pass
+    letterList = []
+    reversedList = []
+    for letters in word:
+        letterList.append(letters)
+        reversedList.append(letters)
+    reversedList.reverse()
+
+    if letterList == reversedList:
+        return True
+    else:
+        return False
+
+
+print(is_palindrome("WOW"), "<--- should return TRUE")
+print(is_palindrome("car"), "<--- should return FALSE")
