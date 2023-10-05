@@ -9,10 +9,11 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
-    if value1 < value2:
-        return value1
+    if value1 > value2:
+        return value2
     else:
         return value2
 
 
 print(minimum_value(2, 1))
+

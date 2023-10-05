@@ -12,5 +12,15 @@
 #
 # Look up the zip function to help you with this problem.
 
+# def pairwise_add(list1, list2):
+#     result = []
+#     for i in range(len(list1)):
+#         result.append(list1[i] + list2[i])
+#     return result
 def pairwise_add(list1, list2):
-    pass
+    result = []
+    for value1, value2 in zip(list1, list2):
+        result.append(value1 + value2)
+    return result
+
+print(pairwise_add([100, 200, 300], [10, 1, 180]))

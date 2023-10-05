@@ -14,9 +14,8 @@
 def is_divisible_by_3(number):
     if number % 3 == 0:
         return "fizz"
-    else:
-        return number
 
+    return number
 
 print(is_divisible_by_3(3), "should return 'fizz' ")
 print(is_divisible_by_3(2), "should return", 2)

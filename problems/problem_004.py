@@ -11,8 +11,8 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
-
 def max_of_three(value1, value2, value3):
+
     maxnum = value1
     vl = [value1, value2, value3]
     for i in vl:

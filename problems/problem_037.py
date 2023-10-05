@@ -24,4 +24,16 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    #I: number to be printed, total length of string, and the padding character
+    #O: padded character*length(-input#length) + input number,
+    #create empty string
+    #iterate by range of length minus input number
+    #return emptystring + input number or pass into as str(number)
+
+    result = ""
+    for i in range(length - len(str(number))):
+        print(i)
+        result += pad
+    return result + str(number)
+
+# print(pad_left(10, 4, "*"))
